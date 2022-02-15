@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Accordion Component</title>
+  <style>
+    /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+    /* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #343a40;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pagination {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-top: 200px;
+      cursor: pointer;
+    }
+
+    .next-icon,
+    .previous-icon {
+      stroke: #087f5b;
+      font-size: 20px;
+      width: 80px;
+      height: 80px;
+      padding: 10px;
+
+    }
+
+    .navigation-btn {
+      border: 1px solid #087f5b;
+      border-radius: 50%;
+    }
+
+    .navigation-btn:hover {
+      background-color: #087f5b;
+      color: aliceblue;
+      stroke: aliceblue;
+    }
+
+    .page-numbers {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .page-number {
+      width: 50px;
+      height: 50px;
+      padding: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .page-number:hover {
+      background-color: #087f5b;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="pagination">
+    <div class="navigation-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="previous-icon" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </div>
+    <div class="page-numbers">
+      <a class="page-number">1</a>
+      <a class="page-number">2</a>
+      <a class="page-number">3</a>
+      <a class="page-number">4</a>
+      <a class="page-number">5</a>
+      <a class="page-number">6</a>
+      <span>...</span>
+      <a class="page-number">23</a>
+    </div>
+    <div class="navigation-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="next-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
